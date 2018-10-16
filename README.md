@@ -1,3 +1,11 @@
+n: The two resource representations are semantically equivalent, e.g. some of the content differences are not important from the business logic perspective e.g. current date displayed on the page might not be important for updating the entire resource for it.
+The syntax for weak validation:
+
+ETag: W/"<etag_value>" 
+Note that this directive is entirely used for the server side logic and has no importance to the client browser.
+
+
+
 ETag, If-Match, and If-None-Match Headers
 The ETag header provides a way to tag resources. This can prevent clients from overriding each other while also making it possible to reduce unnecessary calls.
 
